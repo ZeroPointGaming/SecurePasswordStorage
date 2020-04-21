@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Updates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- Build Version 1.0.12.13344 -->
+    <Build Version="1.0.12.13344" Released="09-11-2019">
+      <Changes>
+        <Change>Added a check if the date field is left blank attempt to use the current system date.</Change>
+        <Change>Added error prevention to button event handlers on the dev tools form.</Change>
+        <Change>Nullified exception objcets in listbox keypress events region on the dev tools form to save memory.</Change>
+        <Change>Added an else statement if only one password box is empty on the setup form to display a message to the user.</Change>
+        <Change>Added an error message on fail of key deletion on the settings form.</Change>
+        <Change>Added critical error messages to the save and load db functions on the settings form.</Change>
+        <Change>Added critical error message to the db load function on the main password form.</Change>
+      </Changes>
+
+      <Features>
+        <Feature>Added Background Color Setting.</Feature>
+        <Feature>Added Foreground color setting.</Feature>
+        <Feature>Added Custom Font setting.</Feature>
+        <Feature>Added Button Color setting.</Feature>
+      </Features>
+      
+      <Revisions>
+        <Revision>Added font,bg,fg,button and reset buttons to the settings form for visual changes.</Revision>
+        <Revision>Added Summaries for intellicode to all objects within the serialization wrapper classes for the changelog serializer.</Revision>
+        <Revision>Removed unneeded keymanager references on form 1.</Revision>
+        <Revision>Added summaries for all functions on form1 for intellicode.</Revision>
+        <Revision>Removed unneeded keymanager references on the settings form.</Revision>
+        <Revision>Added summaries for all functions on the settings form for intellicode.</Revision>
+        <Revision>Added summaries for all functions on the setup form for intellicode.</Revision>
+        <Revision>Added summaries for all functions on the serial key center form for intellicode.</Revision>
+        <Revision>Added summaries for all functions on the serial key settins form for intellicode.</Revision>
+      </Revisions>
+    
+      <BugFixes>
+          <BugFix>Fixed a bug where the build element attributes were not being properly added to the xml output.</BugFix>
+          <BugFix>Fixed a bug where the build element was being called builder by the xml serializer.</BugFix>
+      </BugFixes>
+    </Build>
+  
+   <!-- Build version 1.0.11.0 -->
+   <Build Version="1.0.11.0" Released="09-11-2019">
+      <Features>
+          <Feature>Added a changelog xml generator to the devtools pane.</Feature>
+      </Features>
+   
+      <Revisions>
+          <Revision>Minor Code Revisions.</Revision>
+      </Revisions>
+   
+      <BugFixes>
+          <BugFix>Fixed miscillaneous Error possibilities.</BugFix>
+      </BugFixes>
+    </Build>
+
+    <!-- Build version 1.0.9.2118 -->
+    <Build version="1.0.9.2118" released="09-06-2019">
+    <Changes>
+      <Change>Removed the Function CaluclateHash definition from every class and added it to the EncryptionWrapper class.</Change>
+      <Change>Minor UI Fixes.</Change>
+    </Changes>
+
+    <Features>
+      <Feature>Added a new manager for Serial Keys.</Feature>
+      <Feature>Added a settings tool for the serial key manager.</Feature>
+      <Feature>Added Changelogs.</Feature>
+    </Features>
+
+    <Revisions>
+      <Revision>Added Summaries for intellicode to all functions within the encryption wrapper class.</Revision>
+    </Revisions>
+
+    <BugFixes>
+      <BugFix>Fixed an error where a crash would occur due to a null reference exception in the Encryption Wrapper if it was initialized without a key value.</BugFix>
+    </BugFixes>
+  </Build>
+</Updates>

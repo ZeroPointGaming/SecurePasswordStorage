@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="Updates">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Build">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Changes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Change" maxOccurs="unbounded"></xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Features">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Feature" maxOccurs="unbounded"></xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Revisions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Revision" maxOccurs="unbounded"></xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="BugFixes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="BugFix" maxOccurs="unbounded"></xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="version" type="xs:string"></xs:attribute>
+            <xs:attribute name="released" type="xs:string"></xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string"></xs:attribute>
+      <xs:attribute name="Date" type="xs:string"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
